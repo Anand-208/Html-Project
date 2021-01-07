@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OptionButton Example/Radio Button</title>
+	<script type="text/javascript">
+		function print()
+		{
+			var name,gender,ms;
+			var nameBox=document.getElementById("uname");
+			name=nameBox.value;
+
+			var g1=document.getElementById("g1");
+			var g2=document.getElementById("g2");
+			var g3=document.getElementById("g3");
+			if(g1.checked==true)
+				gender="Male";
+			else if(g2.checked==true)
+				gender="Female";
+			else 
+				gender="Third Gender";
+
+
+			var ms1=document.getElementById("ms1");
+			var ms2=document.getElementById("ms2");
+			if(ms1.checked==true)
+				ms="Unmarried";
+			else
+				ms="Married";
+
+
+			alert("You have entered name="+name+", gender="+gender+" and marital status="+ms);
+			
+
+
+		}
+	</script>
+</head>
+<body>
+<label>Enter Name</label><input type="text" name="gender" id="uname" /><br/>
+<label>Gender:</label><input type="radio"  name="gender" id="g1" checked /><label>Male</label>
+<input type="radio" name="gender" id="g2" /><label>Female</label>
+<input type="radio" name="gender"  id="g3"/><label>Third Gender</label>
+<br/>
+<label>Marital Status</label><input type="radio" name="ms" id="ms1" checked/><label>Unmarried</label><input type="radio" name="ms" id="ms2"/><label>Married</label><br/>
+<button onclick="print();">Print Entered Data</button>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature</title>
+	<style type="text/css">
+		body
+		{
+			/*color:rgb(150,0,150);*/
+			color: yellow;
+			text-align: center;
+			font-size: 20px;
+			background-color:rgb(0,150,0);
+			background-position:fixed;
+
+		}
+		#h2
+		{
+			color: rgb(115,0,0);
+			font-size: 50px;
+
+		}
+		
+	</style>
+	<script type="text/javascript">
+		function convert()
+		{
+			var temp=document.getElementById("c").value;
+			if(temp==="")
+			{
+				alert("Please! Enter celcious temp");
+				
+				return;
+			}
+			/*temp=parsefloat(temp.value);
+			var temp;
+			if(document.getElementById("f").checked===true)
+				temp="f";
+			else if(document.getElementById("k").checked===true);
+				temp="k";
+			else if(document.getElementById("re").checked===true);
+				temp="re";
+			else
+				temp="ra";
+			
+		/*	//print result
+			var r;
+			var result=document.getElementById("result");
+			
+			if(temp==="f")
+			{
+				r=(c/5)*9+32;
+				result.innerHTML=c+"c="+r+"f";
+			}
+			else if(temp==="k")
+			{
+				r=c+273;
+				result.innerHTML=c+"c="+r+"k";
+			}
+			else if(temp==="re")
+			{
+				r=c/5*4;
+				result.innerHTML=c+"c="+r+"re";
+			}
+			else 
+			{
+				r=(c*1.8)+32+459.67;
+				result.innerHTML=c+"c="+r+"ra";
+			}*/
+
+
+		}
+	</script>
+</head>
+<body>
+	<h2 id="h2">Convert Temperature</h2>
+<label>Enter temperature in celcious: </label><input type="number" name="" id="c" placeholder="Entered temperature" /><br/>
+<label>Different temperature</label><input type="radio" name="Different temperature" id="f" checked /><label>Farenheit</label><input type="radio" name="Different temperature"  id="k"/><label>Kelvin</label><input type="radio" name="Different temperature"  id="re"/><label>Reaumuor</label><input type="radio" name="Different temperature"  id="ra"/><label>Rankine</label>
+<br/>
+<button onclick="Convert();">convert</button><br/
+<marquee direction="right" behavior="scroll" scrolldelay="2">degined by <i><b style="font-size: 25px;color: rgb(0,0,200);"><a href = "Biodata.html"  target="_blank"> Anish Anand</a></b></i></marquee>
+</body>
+</html>
